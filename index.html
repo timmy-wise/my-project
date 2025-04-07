@@ -1,0 +1,54 @@
+<html>
+    <head> 
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-con" id="main-content">
+            <div class="container2">
+                <h1>earn Rewards</h1>
+                <div class="buttons">
+                <label for="upload-file">
+                    <button class="button" id="up-btn">Upload</button>
+                </label>
+                </div>
+                <input type="file" id="upload-file" name="upload-file" />
+            </div>
+        
+            <div class="container">
+                <h1>get Free notes</h1>
+                <div class="buttons">
+                    <!-- Download Button -->
+                        <button class="button" id="download-btn">Download</button>
+                </div>
+            </div>
+        </div>
+        <div class="help" id="help-section">
+            <a href="" id="help-link">
+                <h4>How does this work?</h4>      
+            </a>
+        </div>
+        <div id="help-content" style="display: none;">
+            <p>Welcome! This website allows you to easily download and upload notes. 
+            When you upload notes, you earn various rewards that you can either use on the site or rewards that are useful in real life 
+            Just click the 'Upload' button, select your notes, and start earning. 
+            However, your lazy ahh can also download free notes from a wide variety of categories to assist with your studies.</p>
+            <button class="button" id="close-help">Close</button>
+        </div>  
+        <div id="subjects-menu" style="display: none;">
+            <h2 style="font-family: boldonse;">Select Category</h2>
+            <ul>
+                <li><a href="#">Major</a></li>
+                <li><a href="#">Minor</a></li>
+                <li><a href="#">VAC</a></li>
+                <li><a href="#">MDC</a></li>
+                <li><a href="#">SEC</a></li>
+            </ul>
+            <button class="button goback" id="go-back-btn">Go back</button>
+        </div>
+
+    </body>
+    <script src="core.js"></script>
+    <script src="\backend\node\backend.js"></script>
+</html>
