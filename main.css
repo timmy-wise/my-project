@@ -89,7 +89,9 @@ body {
     #subjects-menu a:hover {
         color: #3386e0;
     }
-
+    #help-link{
+        color: yellow;
+    }
         h1 {
             font-family:"boldonse";
             font-size: 3em;
