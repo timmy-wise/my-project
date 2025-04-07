@@ -54,6 +54,7 @@ document.querySelector('.button').addEventListener('click', function() {
             });
         });
         
+        
         // Now, handle the file selection event
         document.getElementById('upload-file').addEventListener('change', function(event) {
             const file = event.target.files[0];  // Get the selected file
@@ -73,6 +74,20 @@ document.querySelector('.button').addEventListener('click', function() {
             .catch(error => console.error(error));
         });
 });
+
+    const clonedLinksD = document.getElementById('subjects-menu').querySelectorAll('a');
+    clonedLinksD.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+        
+            document.getElementById('alertmsg').style.display = 'block'
+            document.querySelector('.submenu').classList.add('blurred');
+            });
+        });
+    function closeAlr(){
+            document.querySelector('.alert').style.display = 'none'; // Hide alert
+            document.querySelector('.submenu').classList.remove('blurred'); // Remove blur effect
+        }
 //help menu
 
 document.getElementById('help-link').addEventListener('click', function(event) {
